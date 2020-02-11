@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="main.js"></script>
+        <title>Pamięć</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Pamięć</h1>
+        </header>
+
+
+            <p>Wprowadź liczbę wierszy</p>
+            <input type="number" id="rows" value="3" placeholder="Wprowadź liczbę wierszy"><br>
+            <p>Wprowadź liczbę kolumn</p>
+            <input type="number" id="cols" value="4" placeholder="Wprowadź liczbę kolumn"><br>
+            <br>
+            <br>
+            <p>Wprowadź ile czasu dajesz sobie na rozgrywkę</p>
+            <input type="number" id="timeGiven" value="60" placeholder="Wprowadź czas rozgrywki"><br>
+
+        <section>
+            
+            <p> 
+                <button class="button" id="start" onclick="start()">Start</button>
+                
+                <div>
+                    Czas: <span id="time">0</span> 
+                </div>
+                <div>
+                    Wynik: <span id="score">0</span> 
+                </div>
+            </p>
+
+            <div id="board"></div>
+        </section>
+        <footer>
+            <p>
+                <p>Copyright &copy; 2014 jkozak.pl</p>
+            </p>
+        </footer>
+    </body>
+</html>
